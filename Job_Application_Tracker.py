@@ -9,10 +9,14 @@ while True:
     print("4. Search applications")
     print("5. Exit")
     choice = int(input("enter your choice:"))
+    try:
+        job_applications = []
+    except ValueError:
+        print("enter a valid number!")
     if choice == 1:
         company = input("enter company name:")
         role = input("enter the role:")
-        ctc = f"{int(input('enter the ctc in lakhs:'))} CTC"
+        ctc = f"{float(input('enter the ctc in lakhs:'))} CTC"
         location = input("enter the location of this job:")
         work_mode = input("enter the mode of the work:")
         date_applied1 = input("enter the date on which you applied for this role in this format yyyy-mm-dd1:")
