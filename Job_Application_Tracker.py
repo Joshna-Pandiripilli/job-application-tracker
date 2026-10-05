@@ -67,7 +67,7 @@ while True:
                 if search_role == job["role"]:
                     print(f"{job["company"]} - {job["role"]} - {job["status"]}")
             elif search_by == 3:
-                if search_status == job["company"]:
+                if search_status == job["status"]:
                     print(f"{job["company"]} - {job["role"]} - {job["status"]}")
             elif search_by == 4:
                 if search_loc == job["location"]:
